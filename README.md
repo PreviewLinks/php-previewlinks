@@ -20,7 +20,7 @@ composer require flowframe/php-previewify
 
 ### Images
 
-Use the `image` method to generate downloadable image URLs, be aware that this might increase the loading time on your page. If you want to use this for on-demand previews continue to Async image.
+Use the `image` method to generate downloadable image URLs, be aware that this might increase the loading time on your page. If you want to use this for on-demand previews continue to Async images.
 
 ```php
 <?php
