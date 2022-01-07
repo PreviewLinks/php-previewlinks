@@ -38,7 +38,7 @@ $response = $previewify->image(
 
 // `$response` will return the response object
 // Be aware that you have to handle any errors or exceptions
-$url = $response->toArray()['url'];
+$url = $response->toArray(throw: false)['url'];
 ```
 
 ### Async images
