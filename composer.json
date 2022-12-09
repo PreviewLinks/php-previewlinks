@@ -1,16 +1,17 @@
 {
-    "name": "flowframe/php-previewify",
-    "description": "The official PHP Previewify client",
+    "name": "previewlinks/php-previewlinks",
+    "description": "The official PHP Previewlinks client",
     "keywords": [
         "Flowframe",
-        "php-previewify"
+        "Previewlinks",
+        "php-previewlinks"
     ],
-    "homepage": "https://github.com/flowframe/php-previewify",
+    "homepage": "https://github.com/PreviewLinks/php-previewlinks",
     "license": "MIT",
     "authors": [
         {
-            "name": "Lars Klopstra",
-            "email": "lars@flowframe.nl",
+            "name": "Logan Craft",
+            "email": "logan@previewlinks.io",
             "role": "Developer"
         }
     ],
@@ -25,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Flowframe\\Previewify\\": "src"
+            "PreviewLinks\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Flowframe\\Previewify\\Tests\\": "tests"
+            "PreviewLinks\\Tests\\": "tests"
         }
     },
     "scripts": {
