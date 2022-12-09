@@ -1,8 +1,8 @@
 <?php
 
-use PreviewLinks\PreviewLinks;
-
 use function PHPUnit\Framework\assertEquals;
+
+use PreviewLinks\PreviewLinks;
 
 it('can generate an async image', function () {
     $previewlinks = new PreviewLinks('test-key');
