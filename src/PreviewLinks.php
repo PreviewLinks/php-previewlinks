@@ -1,15 +1,15 @@
 <?php
 
-namespace Flowframe\Previewify;
+namespace PreviewLinks;
 
 use Symfony\Component\HttpClient\HttpClient;
 use Symfony\Contracts\HttpClient\ResponseInterface;
 
-class Previewify
+class PreviewLinks
 {
-    public const IMAGE_ENDPOINT = 'https://previewify.app/api/image';
+    public const IMAGE_ENDPOINT = 'https://previewlinks.io/api/image';
 
-    public const ASYNC_IMAGE_ENDPOINT = 'https://previewify.app/api/async-image';
+    public const ASYNC_IMAGE_ENDPOINT = 'https://previewlinks.io/api/async-image';
 
     public function __construct(
         public string $apiKey,

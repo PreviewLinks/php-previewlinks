@@ -1,19 +1,13 @@
-# Previewify for PHP
+# PreviewLinks for PHP
 
-This is the official [Previewify](https://previewify.app) client for PHP.
-
-## Support us
-
-[<img src="https://flowfra.me/github-ad.png" width="419px" />](https://flowfra.me/github-ad-click)
-
-Like our work? You can support us by purchasing one of our products.
+This is the official [PreviewLinks](https://previewlinks.io) client for PHP.
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require flowframe/php-previewify
+composer require previewlinks/php-previewlinks
 ```
 
 ## Usage
@@ -25,14 +19,14 @@ Use the `image` method to generate downloadable image URLs, be aware that this m
 ```php
 <?php
 
-use Flowframe\Previewify\Previewify;
+use PreviewLinks\PreviewLinks;
 
-$previewify = new Previewify('<YOUR_SITE_API_KEY>');
+$previewlinks = new PreviewLinks('<YOUR_SITE_API_KEY>');
 
-$response = $previewify->image(
+$response = $previewlinks->image(
     templateId: 1,
     fields: [
-        'previewify:title' => 'Hello from PHP SDK',
+        'previewlinks:title' => 'Hello from PHP SDK',
     ],
 );
 
@@ -48,14 +42,14 @@ Async images are perfect if you don't want to download the image or use meta tag
 ```php
 <?php
 
-use Flowframe\Previewify\Previewify;
+use PreviewLinks\PreviewLinks;
 
-$previewify = new Previewify('<YOUR_SITE_API_KEY>');
+$previewlinks = new PreviewLinks('<YOUR_SITE_API_KEY>');
 
-$url = $previewify->asyncImage(
+$url = $previewlinks->asyncImage(
     templateId: 1,
     fields: [
-        'previewify:title' => 'Hello from PHP SDK',
+        'previewlinks:title' => 'Hello from PHP SDK',
     ],
 );
 
@@ -68,6 +62,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
+-   [Logan Craft](https://github.com/CraftLogan)
 -   [Lars Klopstra](https://github.com/flowframe)
 -   [All Contributors](../../contributors)
 
